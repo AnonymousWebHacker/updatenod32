@@ -1,0 +1,14 @@
+[Unit]
+Description=Actualizar Nod32 Antivirus
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/opt/updatenod32
+TimeoutSec=0
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+
